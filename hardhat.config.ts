@@ -17,11 +17,20 @@ const config: HardhatUserConfig = {
     },
     etherscan: {
         apiKey: {
-            local: 'empty'
+            local: 'empty',
+            remote: 'empty'
         },
         customChains: [
             {
                 network: 'local',
+                chainId: 8888,
+                urls: {
+                    apiURL: "http://localhost/api",
+                    browserURL: "http://localhost"
+                }
+            },
+            {
+                network: 'remote',
                 chainId: 8888,
                 urls: {
                     apiURL: "http://localhost/api",

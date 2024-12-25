@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.20;
+pragma solidity ^0.8.28;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
@@ -35,7 +35,7 @@ contract ESom is ERC20, Ownable {
     event TransferFromFiat(address indexed account, uint256 value);
     event TransferToFiat(address indexed account, uint256 value);
 
-    constructor() ERC20("Electronic Som", "ESOM") Ownable(msg.sender) {}
+    constructor() ERC20("Electro Com", "ECOM") Ownable(msg.sender) {}
 
     function updateBlacklist(address account, bool value) external onlyOwner {
         _blacklist[account] = value;

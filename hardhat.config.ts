@@ -10,7 +10,7 @@ const config: HardhatUserConfig = {
             chainId: 8888,
         },
         remote: {
-            url: `http://116.203.181.216:8545`,
+            url: `http://80.248.60.190:8545`,
             accounts: [vars.get("LOCAL_PRIVATE_KEY")],
             chainId: 8888,
         },
